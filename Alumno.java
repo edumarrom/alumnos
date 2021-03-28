@@ -11,6 +11,7 @@ public class Alumno{
     private int grupo;
     private HashSet<Asignatura> asignaturas = new HashSet<Asignatura>();
     private HashMap<String, Double> notas = new HashMap<String, Double>();
+    private String trims = "";  // No entiendo...
     /**
      * Constructor de la clase Alumno.
      */
@@ -98,7 +99,7 @@ public class Alumno{
      * @return El propio objeto Alumno.
      */
     public Alumno setNota(Asignatura asignatura, int trimestre, Double nota){
-        String trims = "";
+        trims = "";
         IntStream.rangeClosed(1, asignatura.numTrimestres()).forEach(t -> trims += String.valueOf(t));
         if(trims.contains(String.valueOf(trimestre))){
             String clave = asignatura.denom() + String.valueOf(trimestre);
