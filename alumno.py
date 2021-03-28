@@ -73,6 +73,7 @@ class Alumno:
        			que asignar la nota.
 			- trimestre: int -> El trimestre al \
        			que asignar la nota.
+			- nota: float -> La nueva nota.
 
         Devuelve el propio objeto Alumno.
 
