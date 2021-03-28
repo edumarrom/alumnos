@@ -31,7 +31,7 @@ public class Alumno{
      * @return La representación literal del alumno.
      */
     public String toString(){
-          return "Soy el alumno " + this.nombre() + ", y pertenezco al " + this.grupo() + ".";
+          return "Soy el alumno " + this.nombre() + ", y pertenezco al grupo " + this.grupo() + ".";
     }
 
     /**
